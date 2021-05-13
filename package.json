@@ -17,6 +17,7 @@
   "devDependencies": {
     "@oclif/dev-cli": "^1",
     "@oclif/test": "^1",
+    "@types/axios": "0.14.0",
     "@types/chai": "^4",
     "@types/mocha": "^5",
     "@types/node": "^10",

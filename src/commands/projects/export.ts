@@ -18,6 +18,12 @@ export default class ExportProject extends Base {
   async run() {
     const {args} = this.parse(ExportProject)
 
-    fetch()
+    const response = this.fetch.get(`projects/${args.project_id}`,
+      {transformResponse: r => r}
+    ).then(response => {
+      this.log(response.data)
+    }, error => {
+      this.error(error)
+    })
   }
 }
