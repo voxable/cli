@@ -18,7 +18,7 @@ export default class ExportProject extends Base {
   async run() {
     const {args} = this.parse(ExportProject)
 
-    const response = this.fetch.get(`projects/${args.project_id}/export`,
+    this.fetch.get(`projects/${args.project_id}/export`,
       {transformResponse: r => r}
     ).then(response => {
       this.log(response.data)

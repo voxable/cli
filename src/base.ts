@@ -21,7 +21,10 @@ export default abstract class extends Command {
     axios.defaults.baseURL =
       this.configuration.config.baseURL ||
       'https://voxable.design/api/v1/'
-    axios.defaults.headers.common = {Authorization: `Bearer ${this.apiKey}`}
+    axios.defaults.headers.common = {
+      Authorization: `Bearer ${this.apiKey}`,
+      'User-Agent': '@voxable/cli',
+    }
 
     this.fetch = axios
   }
