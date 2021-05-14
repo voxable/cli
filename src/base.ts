@@ -17,13 +17,23 @@ export default abstract class extends Command {
     this.configuration = explorerSync.search()
     this.apiKey = this.configuration?.config.apiKey
 
-    // Configure API.
+    // Configure API calls.
     axios.defaults.baseURL =
-      this.configuration?.config.baseURL ||
-      'https://voxable.design/api/v1/'
-    axios.defaults.headers.common = {
-      Authorization: `Bearer ${this.apiKey}`,
-      'User-Agent': '@voxable/cli',
+      this.configuration?.config.baseURL || 'https://api.voxable.design/v1/'
+    axios.defaults.headers.common.Authorization = `Bearer ${this.apiKey}`
+    axios.defaults.headers.common['User-Agent'] = '@voxable/cli'
+
+    // Debug requests and responses if DEBUG=true
+    if (process.env.DEBUG) {
+      axios.interceptors.request.use(req => {
+        console.log(req)
+        return req
+      }, error => Promise.reject(error))
+
+      axios.interceptors.response.use(res => {
+        console.log(res)
+        return res
+      }, error => Promise.reject(error))
     }
 
     this.fetch = axios
