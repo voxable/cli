@@ -21,7 +21,7 @@ export default class ExportProject extends Base {
 
     cli.action.start('📦 Exporting project...')
 
-    this.fetch.get(`projects/${args.project_id}/export`,
+    this.fetch?.get(`projects/${args.project_id}/export`,
       {transformResponse: r => r}
     ).then(response => {
       cli.action.stop()
