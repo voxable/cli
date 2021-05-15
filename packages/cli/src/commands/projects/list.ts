@@ -8,11 +8,10 @@ export default class ListProjects extends Base {
   ]
 
   async run() {
-    this.fetch?.get('projects',
-      {transformResponse: r => r}
-    ).then(response => {
+    this.fetch.get('projects')
+    .then((response: { data: string | undefined }) => {
       this.log(response.data)
-    }, error => {
+    }, (error: string | Error) => {
       this.error(error)
     })
   }
