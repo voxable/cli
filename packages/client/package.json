@@ -1,0 +1,22 @@
+{
+  "name": "@voxable/client",
+  "version": "0.0.1",
+  "description": "The Voxable API client library for JavaScript.",
+  "main": "lib/index.js",
+  "repository": "https://github.com/voxable/cli",
+  "author": "Voxable <howdy@voxable.io>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "4.23.0",
+    "@typescript-eslint/parser": "4.23.0",
+    "eslint": "7.26.0",
+    "typescript": "4.2.4"
+  },
+  "dependencies": {
+    "axios": "0.21.1"
+  },
+  "scripts": {
+    "prepack": "rm -rf lib && tsc -b"
+  }
+}

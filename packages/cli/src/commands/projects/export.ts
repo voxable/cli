@@ -1,5 +1,7 @@
 import Base from '../../base'
+
 import cli from 'cli-ux'
+import {flags} from '@oclif/command'
 
 export default class ExportProject extends Base {
   static description = 'export a project'
@@ -16,18 +18,21 @@ export default class ExportProject extends Base {
     },
   ]
 
+  static flags = {
+    help: flags.help({char: 'h'}),
+  }
+
   async run() {
     const {args} = this.parse(ExportProject)
 
     cli.action.start('📦 Exporting project...')
 
-    this.fetch?.get(`projects/${args.project_id}/export`,
-      {transformResponse: r => r}
-    ).then(response => {
+    this.client?.exportProject(args.project_id)
+    .then((response: { data: string | undefined }) => {
       cli.action.stop()
 
-      this.log(response.data)
-    }, error => {
+      this.log(JSON.stringify(response.data))
+    }, (error: string | Error) => {
       this.error(error)
     })
   }

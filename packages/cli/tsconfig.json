@@ -1,14 +1,13 @@
 {
   "compilerOptions": {
-    "baseUrl": "./packages",
     "declaration": true,
     "importHelpers": true,
     "module": "commonjs",
-    "paths": {
-      "@voxable/*": ["*/src"]
-    },
+    "outDir": "lib",
+    "rootDir": "src",
     "strict": true,
     "target": "es2017",
+    "allowSyntheticDefaultImports": true
   },
   "include": [
     "src/**/*"
