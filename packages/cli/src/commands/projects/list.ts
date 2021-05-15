@@ -24,7 +24,7 @@ export default class ListProjects extends Base {
     const {flags} = this.parse(ListProjects)
 
     return this.client?.listProjects()
-    .then((response: { data: { projects: Array<{name: string}> } }) => {
+    .then((response: { data: { projects: Array<{name: string, id:string}> } }) => {
       // Return JSON, if requested.
       if (flags.json) {
         this.log(JSON.stringify(response.data))
