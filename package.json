@@ -2,7 +2,6 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "@oclif/dev-cli": "^1",
     "@oclif/plugin-help": "^3",
     "@oclif/test": "^1",
     "@types/chai": "^4",

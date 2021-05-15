@@ -7,5 +7,8 @@ export default class ExportProject extends Base {
         required: boolean;
         description: string;
     }[];
+    static flags: {
+        help: import("@oclif/parser/lib/flags").IBooleanFlag<void>;
+    };
     run(): Promise<void>;
 }

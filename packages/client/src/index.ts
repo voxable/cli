@@ -1,8 +1,8 @@
-import axios, {AxiosTransformer} from 'axios'
+import axios, {AxiosStatic, AxiosTransformer} from 'axios'
 
 class Client {
   // fetch client
-  private fetch: AxiosStatic
+  private fetch: AxiosStatic | undefined
 
   /**
    * Create a new API client.
@@ -12,7 +12,7 @@ class Client {
    * @param baseUrl -
    *   The base API URL (optional, defaults to production API).
    */
-  initialize(apiToken: string, baseUrl: string) {
+  constructor(apiToken: string, baseUrl: string) {
     // Configure API calls.
     axios.defaults.baseURL = baseUrl || 'https://api.voxable.design/v1/'
     axios.defaults.headers.common.Authorization = `Bearer ${apiToken}`
@@ -41,12 +41,22 @@ class Client {
   }
 
   /**
+   * Export an entire project's data.
+   *
+   * @param projectId -
+   *   The ID of the project to export.
+   *
+   * @return - The project's data.
+   */
+  public async exportProject(projectId: string): Promise<any> {
+    return this.fetch?.get(`projects/${projectId}/export`)
+  }
+
+  /**
    * @return - The list of projects accessible by this user.
    */
-  public async  listProjects(): Promise<any> {
-    return this.fetch.get('projects',
-      {transformResponse: (r: Record<string, unknown>) => r},
-    )
+  public async listProjects(): Promise<any> {
+    return this.fetch?.get('projects')
   }
 }
 

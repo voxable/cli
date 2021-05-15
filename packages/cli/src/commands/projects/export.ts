@@ -27,13 +27,12 @@ export default class ExportProject extends Base {
 
     cli.action.start('📦 Exporting project...')
 
-    this.fetch?.get(`projects/${args.project_id}/export`,
-      {transformResponse: r => r},
-    ).then(response => {
+    this.client?.exportProject(args.project_id)
+    .then((response: { data: string | undefined }) => {
       cli.action.stop()
 
-      this.log(response.data)
-    }, error => {
+      this.log(JSON.stringify(response.data))
+    }, (error: string | Error) => {
       this.error(error)
     })
   }

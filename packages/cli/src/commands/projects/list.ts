@@ -8,9 +8,9 @@ export default class ListProjects extends Base {
   ]
 
   async run() {
-    this.fetch.get('projects')
+    return this.client?.listProjects()
     .then((response: { data: string | undefined }) => {
-      this.log(response.data)
+      this.log(JSON.stringify(response.data))
     }, (error: string | Error) => {
       this.error(error)
     })

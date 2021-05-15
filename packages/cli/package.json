@@ -8,12 +8,12 @@
   },
   "bugs": "https://github.com/voxable/cli/issues",
   "dependencies": {
+    "@oclif/dev-cli": "^1",
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^3",
     "@oclif/plugin-plugins": "1.10.0",
     "@voxable/client": "file:../client/",
-    "axios": "0.21.1",
     "cli-ux": "5.5.1",
     "cosmiconfig": "7.0.0",
     "tslib": "^1"

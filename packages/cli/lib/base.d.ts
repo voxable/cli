@@ -1,8 +1,7 @@
 import Command from '@oclif/command';
-import { AxiosStatic } from 'axios';
+import Client from '@voxable/client';
 export default abstract class extends Command {
     private configuration;
-    private apiKey;
-    protected fetch: AxiosStatic | undefined;
+    protected client: Client | undefined;
     init(): Promise<void>;
 }

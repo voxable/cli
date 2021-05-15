@@ -1,13 +1,16 @@
 import Command from '@oclif/command'
 import {CosmiconfigResult} from 'cosmiconfig/dist/types'
-const {cosmiconfig, cosmiconfigSync} = require('cosmiconfig')
+const {cosmiconfigSync} = require('cosmiconfig')
 import {AxiosStatic} from 'axios'
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import Client from '@voxable/client'
 
 export default abstract class extends Command {
   private configuration: CosmiconfigResult | undefined;
 
-  protected fetch: AxiosStatic;
+  // The `@voxable/client` API client.
+  protected client: Client | undefined;
 
   async init() {
     const explorerSync = cosmiconfigSync('voxable')
@@ -16,9 +19,8 @@ export default abstract class extends Command {
     this.configuration = explorerSync.search()
     const apiToken = this.configuration?.config.apiKey
 
-    this.fetch = Client.new({
-      apiToken,
-      baseURL: this.configuration?.config.baseURL,
-    })
+    this.client = new Client(
+      apiToken, this.configuration?.config.baseURL,
+    )
   }
 }
