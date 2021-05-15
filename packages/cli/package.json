@@ -19,6 +19,7 @@
     "cli-table": "0.3.6",
     "cli-ux": "5.5.1",
     "cosmiconfig": "7.0.0",
+    "terminal-link": "3.0.0",
     "tslib": "^1"
   },
   "engines": {

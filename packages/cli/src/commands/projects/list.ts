@@ -1,6 +1,7 @@
 import Base from '../../base'
 
 import {flags} from '@oclif/command'
+import terminalLink from 'terminal-link'
 const Table = require('cli-table')
 const chalk = require('chalk')
 
@@ -34,12 +35,17 @@ export default class ListProjects extends Base {
       const projects: Array<{name:string, id:string}> = response.data.projects
 
       const table = new Table({
-        head: [`${chalk.green.bold('Name')}`, `${chalk.green.bold('ID')}`],
+        head: [
+          `${chalk.green.bold('Name')}`,
+          `${chalk.green.bold('URL')}`,
+        ],
       })
 
       for (const project of projects) {
         if ({}.hasOwnProperty.call(project, 'name') && {}.hasOwnProperty.call(project, 'id')) {
-          table.push([project.name, project.id])
+          const url = 'https://voxable.design/projects/' + project.id
+
+          table.push([project.name, url])
         }
       }
 
