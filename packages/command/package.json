@@ -1,0 +1,19 @@
+{
+  "name": "@voxable/command",
+  "version": "0.0.1",
+  "description": "A base command for the Voxable CLI.",
+  "main": "lib/index.js",
+  "repository": "https://github.com/voxable/cli",
+  "author": "Voxable LLC <howdy@voxable.io>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "4.24.0",
+    "@typescript-eslint/parser": "4.24.0",
+    "eslint": "7.26.0",
+    "typescript": "4.2.4"
+  },
+  "scripts": {
+    "prepack": "rm -rf lib && tsc -b"
+  }
+}

@@ -1,7 +1,6 @@
 import Command from '@oclif/command'
 import {CosmiconfigResult} from 'cosmiconfig/dist/types'
 const {cosmiconfigSync} = require('cosmiconfig')
-import {AxiosStatic} from 'axios'
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import Client from '@voxable/client'

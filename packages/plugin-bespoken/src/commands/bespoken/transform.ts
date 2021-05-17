@@ -16,9 +16,9 @@ export default class Transform extends Base {
 
   async run() {
     const {args, flags} = this.parse(Transform)
-    this.fetch?.get(`projects/${args.project_id}/export`,
-      {transformResponse: r => r}
-    ).then(response => {
+
+    this.client?.exportProject(args.project_id)
+    .then(response => {
       cli.action.stop()
 
       console.log(response.data.scripts)

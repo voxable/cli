@@ -1,4 +1,4 @@
-import Base from '../../base'
+import Base from '@voxable/command'
 
 import cli from 'cli-ux'
 import {flags} from '@oclif/command'

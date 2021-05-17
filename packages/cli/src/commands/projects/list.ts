@@ -1,4 +1,4 @@
-import Base from '../../base'
+import Base from '@voxable/command'
 
 import {flags} from '@oclif/command'
 import terminalLink from 'terminal-link'
