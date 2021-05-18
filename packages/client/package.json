@@ -20,5 +20,8 @@
   "scripts": {
     "prepack": "rm -f tsconfig.tsbuildinfo && rm -rf lib && tsc -b"
   },
-  "gitHead": "de47b9104ac85cc16b82d206c20206a1d6a2bf80"
+  "gitHead": "de47b9104ac85cc16b82d206c20206a1d6a2bf80",
+  "dependencies": {
+    "axios": "0.21.1"
+  }
 }
