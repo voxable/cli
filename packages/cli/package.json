@@ -9,8 +9,8 @@
   "bugs": "https://github.com/voxable/cli/issues",
   "dependencies": {
     "@types/cli-table": "0.3.0",
-    "@voxable/client": "file:../client/",
-    "@voxable/command": "file:../command/",
+    "@voxable/client": "^0.1.0",
+    "@voxable/command": "^0.1.0",
     "chalk": "4.1.1",
     "cli-table": "0.3.6",
     "cli-ux": "5.5.1",
@@ -59,5 +59,6 @@
     "@typescript-eslint/parser": "4.23.0",
     "eslint": "7.26.0",
     "typescript": "4.2.4"
-  }
+  },
+  "gitHead": "de47b9104ac85cc16b82d206c20206a1d6a2bf80"
 }
