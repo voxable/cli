@@ -23,11 +23,11 @@ class Client {
         // Debug requests and responses if DEBUG=true
         if (process.env.DEBUG) {
             axios_1.default.interceptors.request.use(req => {
-                console.log(req);
+                console.error(req);
                 return req;
             }, error => Promise.reject(error));
             axios_1.default.interceptors.response.use(res => {
-                console.log(res);
+                console.error(res);
                 return res;
             }, error => Promise.reject(error));
         }

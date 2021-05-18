@@ -10,6 +10,11 @@
     "strict": true,
     "target": "es2017"
   },
+  "references": [
+    {
+      "path": "../../"
+    }
+  ],
   "include": [
     "src/**/*"
   ]

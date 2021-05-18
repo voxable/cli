@@ -1,16 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const base_1 = require("../../base");
+const command_1 = require("@voxable/command");
 const cli_ux_1 = require("cli-ux");
-const command_1 = require("@oclif/command");
-class ExportProject extends base_1.default {
+class ExportProject extends command_1.default {
     async run() {
         var _a;
         const { args } = this.parse(ExportProject);
         cli_ux_1.default.action.start('📦 Exporting project...');
         (_a = this.client) === null || _a === void 0 ? void 0 : _a.exportProject(args.project_id).then((response) => {
             cli_ux_1.default.action.stop();
-            this.log(response.data);
+            this.log(JSON.stringify(response.data));
         }, (error) => {
             this.error(error);
         });
@@ -28,6 +27,3 @@ ExportProject.args = [
         description: 'project ID',
     },
 ];
-ExportProject.flags = {
-    help: command_1.flags.help({ char: 'h' }),
-};

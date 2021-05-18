@@ -8,11 +8,6 @@
   },
   "bugs": "https://github.com/voxable/cli/issues",
   "dependencies": {
-    "@oclif/command": "^1",
-    "@oclif/config": "^1",
-    "@oclif/dev-cli": "^1",
-    "@oclif/plugin-help": "^3",
-    "@oclif/plugin-plugins": "1.10.0",
     "@types/cli-table": "0.3.0",
     "@voxable/client": "file:../client/",
     "@voxable/command": "file:../command/",
@@ -34,16 +29,17 @@
   ],
   "homepage": "https://github.com/voxable/cli",
   "keywords": [
-    "oclif"
+    "nlu",
+    "cui",
+    "vui",
+    "voice"
   ],
   "license": "MIT",
   "main": "lib/index.js",
   "oclif": {
     "commands": "./lib/commands",
     "bin": "voxable",
-    "scope": "voxable",
     "plugins": [
-      "@oclif/plugin-help",
       "@oclif/plugin-plugins"
     ]
   },
@@ -57,6 +53,8 @@
   },
   "types": "lib/index.d.ts",
   "devDependencies": {
+    "@oclif/dev-cli": "1.26.0",
+    "@oclif/plugin-plugins": "1.10.0",
     "@typescript-eslint/eslint-plugin": "4.23.0",
     "@typescript-eslint/parser": "4.23.0",
     "eslint": "7.26.0",

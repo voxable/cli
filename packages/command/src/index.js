@@ -1,9 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const command_1 = require("@oclif/command");
+// eslint-disable-next-line node/no-extraneous-require
 const { cosmiconfigSync } = require('cosmiconfig');
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
 const client_1 = require("@voxable/client");
 class default_1 extends command_1.default {
     async init() {
@@ -16,3 +15,6 @@ class default_1 extends command_1.default {
     }
 }
 exports.default = default_1;
+default_1.flags = {
+    help: command_1.flags.help({ char: 'h' }),
+};

@@ -7,7 +7,9 @@
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
+    "@oclif/dev-cli": "1.26.0",
     "@voxable/client": "file:../client/",
+    "@voxable/command": "file:../command/",
     "tslib": "^1"
   },
   "engines": {
@@ -25,10 +27,11 @@
   ],
   "license": "MIT",
   "oclif": {
+    "scope": "bespoken",
     "commands": "./lib/commands",
-    "bin": "oclif-example",
+    "bin": "voxable",
     "devPlugins": [
-      "@oclif/plugin-help"
+      "@oclif/plugin-plugins"
     ]
   },
   "repository": "voxable/cli",
@@ -40,6 +43,8 @@
     "version": "oclif-dev readme && git add README.md"
   },
   "devDependencies": {
+    "@oclif/dev-cli": "1.26.0",
+    "@oclif/plugin-plugins": "1.10.0",
     "@typescript-eslint/eslint-plugin": "4.24.0",
     "@typescript-eslint/parser": "4.24.0",
     "eslint": "7.26.0",

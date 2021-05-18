@@ -8,9 +8,15 @@
     "outDir": "lib",
     "rootDir": "src",
     "strict": true,
-    "target": "es2017"
+    "target": "es2017",
+    "resolveJsonModule": true
   },
   "include": [
     "src/**/*"
+  ],
+  "references": [
+    {
+      "path": "../../"
+    }
   ]
 }

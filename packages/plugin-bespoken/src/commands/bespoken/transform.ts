@@ -1,28 +1,23 @@
-import {Command, flags} from '@oclif/command'
-import Base from '../../../../voxable-cli/src/base'
+import Base from '@voxable/command'
+
+import cli from 'cli-ux'
 
 export default class Transform extends Base {
-  static description = 'describe the command here'
+  static description = 'transform a Voxable project into Bespoken tests'
 
   static examples = [
     '$ voxable bespoken:transform',
   ]
 
-  static flags = {
-    help: flags.help({char: 'h'}),
-  }
-
-  static args = [{name: 'file'}]
-
   async run() {
-    const {args, flags} = this.parse(Transform)
+    const {args} = this.parse(Transform)
 
     this.client?.exportProject(args.project_id)
-    .then(response => {
-      cli.action.stop()
+    .then((response: { data: string | undefined }) => {
+      const project = JSON.stringify(response.data)
 
-      console.log(response.data.scripts)
-    }, error => {
+      cli.action.start('🏭 Generating Bespoken tests...')
+    }, (error: string | Error) => {
       this.error(error)
     })
   }

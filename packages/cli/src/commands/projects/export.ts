@@ -1,7 +1,6 @@
 import Base from '@voxable/command'
 
 import cli from 'cli-ux'
-import {flags} from '@oclif/command'
 
 export default class ExportProject extends Base {
   static description = 'export a project'
@@ -17,10 +16,6 @@ export default class ExportProject extends Base {
       description: 'project ID',
     },
   ]
-
-  static flags = {
-    help: flags.help({char: 'h'}),
-  }
 
   async run() {
     const {args} = this.parse(ExportProject)

@@ -28,33 +28,14 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`voxable help [COMMAND]`](#voxable-help-command)
 * [`voxable plugins`](#voxable-plugins)
 * [`voxable plugins:inspect PLUGIN...`](#voxable-pluginsinspect-plugin)
 * [`voxable plugins:install PLUGIN...`](#voxable-pluginsinstall-plugin)
 * [`voxable plugins:link PLUGIN`](#voxable-pluginslink-plugin)
 * [`voxable plugins:uninstall PLUGIN...`](#voxable-pluginsuninstall-plugin)
 * [`voxable plugins:update`](#voxable-pluginsupdate)
-* [`voxable projects`](#voxable-projects)
 * [`voxable projects:export PROJECT_ID`](#voxable-projectsexport-project_id)
 * [`voxable projects:list`](#voxable-projectslist)
-
-## `voxable help [COMMAND]`
-
-display help for voxable
-
-```
-USAGE
-  $ voxable help [COMMAND]
-
-ARGUMENTS
-  COMMAND  command to show help for
-
-OPTIONS
-  --all  see all commands in CLI
-```
-
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
 
 ## `voxable plugins`
 
@@ -194,15 +175,6 @@ OPTIONS
 
 _See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v1.10.0/src/commands/plugins/update.ts)_
 
-## `voxable projects`
-
-```
-USAGE
-  $ voxable projects
-```
-
-_See code: [src/commands/projects/index.ts](https://github.com/voxable/cli/blob/v0.0.3/src/commands/projects/index.ts)_
-
 ## `voxable projects:export PROJECT_ID`
 
 export a project
@@ -230,6 +202,9 @@ list all projects
 ```
 USAGE
   $ voxable projects:list
+
+OPTIONS
+  -j, --json  Output results in JSON. When not specified, renders in human-readable format.
 
 EXAMPLE
   $ voxable projects:list

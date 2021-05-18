@@ -9,3 +9,7 @@ node_modules
 .idea/
 
 .voxablerc.yml
+
+# TypeScript build info
+*.tsbuildinfo
+

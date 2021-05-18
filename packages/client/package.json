@@ -13,9 +13,6 @@
     "eslint": "7.26.0",
     "typescript": "4.2.4"
   },
-  "dependencies": {
-    "axios": "0.21.1"
-  },
   "scripts": {
     "prepack": "rm -rf lib && tsc -b"
   }

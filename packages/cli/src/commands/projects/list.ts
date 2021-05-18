@@ -1,7 +1,5 @@
 import Base from '@voxable/command'
-
 import {flags} from '@oclif/command'
-import terminalLink from 'terminal-link'
 const Table = require('cli-table')
 const chalk = require('chalk')
 
