@@ -19,7 +19,7 @@ $ npm install -g @voxable/cli
 $ voxable COMMAND
 running command...
 $ voxable (-v|--version|version)
-@voxable/cli/0.1.1 darwin-x64 node-v15.12.0
+@voxable/cli/0.1.2 darwin-x64 node-v15.12.0
 $ voxable --help [COMMAND]
 USAGE
   $ voxable COMMAND
@@ -34,6 +34,8 @@ USAGE
 * [`voxable plugins:link PLUGIN`](#voxable-pluginslink-plugin)
 * [`voxable plugins:uninstall PLUGIN...`](#voxable-pluginsuninstall-plugin)
 * [`voxable plugins:update`](#voxable-pluginsupdate)
+* [`voxable projects:export PROJECT_ID`](#voxable-projectsexport-project_id)
+* [`voxable projects:list`](#voxable-projectslist)
 
 ## `voxable plugins`
 
@@ -172,4 +174,41 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v1.10.0/src/commands/plugins/update.ts)_
+
+## `voxable projects:export PROJECT_ID`
+
+export a project
+
+```
+USAGE
+  $ voxable projects:export PROJECT_ID
+
+ARGUMENTS
+  PROJECT_ID  project ID
+
+OPTIONS
+  -h, --help  show CLI help
+
+EXAMPLE
+  $ voxable projects:export PROJECT_ID
+```
+
+_See code: [src/commands/projects/export.ts](https://github.com/voxable/cli/blob/v0.1.2/src/commands/projects/export.ts)_
+
+## `voxable projects:list`
+
+list all projects
+
+```
+USAGE
+  $ voxable projects:list
+
+OPTIONS
+  -j, --json  Output results in JSON. When not specified, renders in human-readable format.
+
+EXAMPLE
+  $ voxable projects:list
+```
+
+_See code: [src/commands/projects/list.ts](https://github.com/voxable/cli/blob/v0.1.2/src/commands/projects/list.ts)_
 <!-- commandsstop -->
