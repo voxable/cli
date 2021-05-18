@@ -279,15 +279,15 @@
     "@typescript-eslint/types" "4.24.0"
     eslint-visitor-keys "^2.0.0"
 
-"@voxable/client@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@voxable/client/-/client-0.1.0.tgz#993c40acc69091fdb06073063efe4eaf0a7f13e1"
-  integrity sha512-dFL3XM8X2zwisKxBjOgSISv3InM78FGTySNMqNip+eIQCudQCy8nxojqzCeRGBb5nOKRIVU6q5LsEU7cs/uTAQ==
-
-"@voxable/command@^0.1.1":
+"@voxable/client@^0.1.1":
   version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@voxable/command/-/command-0.1.1.tgz#1f477f5f3c6d1c29c13b7eac973096d88e70bd70"
-  integrity sha512-Nco+jha5rHo/hGOVEaQQO+Eg8TvWqNwsMgEQ0Gmh/qFH8pni52j1jvLqKKKLx1RbRAfLzuUMwJ6QIZSDESalmg==
+  resolved "https://registry.yarnpkg.com/@voxable/client/-/client-0.1.1.tgz#f49067dbd3a20683386ec6bc0aa02f68b5256b9f"
+  integrity sha512-IWj5qu4GSqyakY5G1gAxNBnvN0xz9JtdtDm48vqL4C85LGmX7VLqrTT1wugMzU521zZj4N6DmxE68VKFeaXUAg==
+
+"@voxable/command@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@voxable/command/-/command-0.1.2.tgz#bfdf41db5a060666ca2c17a218e868cedb82c315"
+  integrity sha512-NUmWhttsGHXWi97H+06S1YJ9msXlohTc2cK6OkFjn6VHIsdj14yRFRrdmxCmzSyDIRbJvW4M+hSjvkvfdBvfLA==
 
 acorn-jsx@^5.3.1:
   version "5.3.1"
