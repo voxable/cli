@@ -1,6 +1,6 @@
 {
   "name": "@voxable/client",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The Voxable API client library for JavaScript.",
   "main": "lib/index.js",
   "repository": "https://github.com/voxable/cli",

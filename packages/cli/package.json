@@ -9,8 +9,8 @@
   "bugs": "https://github.com/voxable/cli/issues",
   "dependencies": {
     "@types/cli-table": "0.3.0",
-    "@voxable/client": "^0.1.0",
-    "@voxable/command": "^0.1.1",
+    "@voxable/client": "^0.1.1",
+    "@voxable/command": "^0.1.2",
     "chalk": "4.1.1",
     "cli-table": "0.3.6",
     "cli-ux": "5.5.1",
