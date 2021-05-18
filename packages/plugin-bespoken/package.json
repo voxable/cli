@@ -7,9 +7,9 @@
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
-    "@oclif/dev-cli": "1.26.0",
     "@voxable/client": "^0.1.3",
     "@voxable/command": "^0.1.3",
+    "cosmiconfig": "7.0.0",
     "tslib": "^1"
   },
   "engines": {
