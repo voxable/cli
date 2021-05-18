@@ -1,7 +1,7 @@
 {
   "name": "@voxable/plugin-bespoken",
   "description": "Bespoken plugin for the Voxable CLI.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Voxable, Inc. <howdy@voxable.io>",
   "bugs": "https://github.com/voxable/cli/issues",
   "dependencies": {
