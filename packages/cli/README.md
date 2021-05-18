@@ -19,7 +19,7 @@ $ npm install -g @voxable/cli
 $ voxable COMMAND
 running command...
 $ voxable (-v|--version|version)
-@voxable/cli/0.1.2 darwin-x64 node-v15.12.0
+@voxable/cli/0.1.3 darwin-x64 node-v15.12.0
 $ voxable --help [COMMAND]
 USAGE
   $ voxable COMMAND
@@ -193,7 +193,7 @@ EXAMPLE
   $ voxable projects:export PROJECT_ID
 ```
 
-_See code: [src/commands/projects/export.ts](https://github.com/voxable/cli/blob/v0.1.2/src/commands/projects/export.ts)_
+_See code: [src/commands/projects/export.ts](https://github.com/voxable/cli/blob/v0.1.3/src/commands/projects/export.ts)_
 
 ## `voxable projects:list`
 
@@ -210,5 +210,5 @@ EXAMPLE
   $ voxable projects:list
 ```
 
-_See code: [src/commands/projects/list.ts](https://github.com/voxable/cli/blob/v0.1.2/src/commands/projects/list.ts)_
+_See code: [src/commands/projects/list.ts](https://github.com/voxable/cli/blob/v0.1.3/src/commands/projects/list.ts)_
 <!-- commandsstop -->
