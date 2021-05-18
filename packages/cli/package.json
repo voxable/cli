@@ -1,7 +1,7 @@
 {
   "name": "@voxable/cli",
   "description": "A client for the Voxable conversation design platform's API.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Voxable, Inc. <howdy@voxable.io>",
   "bin": {
     "voxable": "./bin/run"
