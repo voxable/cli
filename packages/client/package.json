@@ -8,7 +8,8 @@
   "license": "MIT",
   "private": false,
   "files": [
-    "/lib"
+    "lib/index.js",
+    "npm-shrinkwrap.json"
   ],
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "4.23.0",
