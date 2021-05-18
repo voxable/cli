@@ -58,7 +58,7 @@ export default function generate(projectExport: string): string {
 
       for (const message of path) {
         if (message.type === 'UserMessage') {
-          tests += '\n"' + message.text + '":'
+          tests += '\n- "' + message.text + '":'
         } else {
           tests += '"' + message.text + '"'
         }
