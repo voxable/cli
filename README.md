@@ -1,8 +1,19 @@
 # Voxable CLI 🪄
 
-This is the monorepo for the Voxable CLI and its associated libraries.
+This is a client for the [Voxable](https://voxable.io) conversation design platform&#39;s API. You can access your conversational AI data and transform it into useful formats.
 
-## Getting started
+## Getting Started
+
+```sh-session
+$ npm install -g @voxable/cli
+$ voxable --help
+```
+
+See [our API documentation](http://help.voxable.io/en/articles/5231902-using-the-voxable-api) for more information on setting up the CLI.
+
+## Contributing
+
+This CLI is a monorepo managed with Lerna. Check out the main repo and bootstrap it to get started with local development:
 
 ```console
 cd voxable-cli
@@ -14,7 +25,7 @@ lerna bootstrap --scope @voxable/plugin-bespoken
 lerna bootstrap
 ```
 
-## Creating a new plugin
+### Creating a new plugin
 
 1. `npx oclif plugin mynewplugin`
 2. `cd mynewplugin`
