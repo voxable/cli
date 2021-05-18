@@ -6,7 +6,7 @@ export default class ExportProject extends Base {
   static description = 'export a project'
 
   static examples = [
-    '$ voxable projects:export 3b2dcb09-e4d8-481a-8cc9-4fdc2bdb45f6',
+    '$ voxable projects:export PROJECT_ID',
   ]
 
   static args = [

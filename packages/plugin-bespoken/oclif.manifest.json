@@ -1,1 +1,0 @@
-{"version":"0.0.0","commands":{"bespoken:transform":{"id":"bespoken:transform","description":"transform a Voxable project into Bespoken tests","pluginName":"@voxable/plugin-bespoken","pluginType":"core","aliases":[],"examples":["$ voxable bespoken:transform"],"flags":{"help":{"name":"help","type":"boolean","char":"h","description":"show CLI help","allowNo":false}},"args":[]}}}

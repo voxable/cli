@@ -21,5 +21,4 @@ lerna bootstrap
 3. `yarn add @oclif/plugin-plugins @oclif/plugin-help`
 4. Copy `oclif.scope` and `oclif.dependencies` from an existing plugin's `package.json`.
 5. From your local checkout of this repo, run `./bin/run plugins:link ../mynewplugin`
-6. From within your plugin's repo: `../voxable-cli/packages/cli/bin/run plugins:link`
-7. Run `./bin/run plugins` to ensure you see your new plugin listed.
+6. Run `./bin/run plugins` to ensure you see your new plugin listed.
