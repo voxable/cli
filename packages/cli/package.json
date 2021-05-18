@@ -2,7 +2,7 @@
   "name": "@voxable/cli",
   "description": "A client for the Voxable conversation design platform's API.",
   "version": "0.0.3",
-  "author": "Voxable LLC <howdy@voxable.io>",
+  "author": "Voxable, Inc. <howdy@voxable.io>",
   "bin": {
     "voxable": "./bin/run"
   },

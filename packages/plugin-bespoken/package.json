@@ -2,7 +2,7 @@
   "name": "@voxable/plugin-bespoken",
   "description": "Bespoken plugin for the Voxable CLI.",
   "version": "0.0.0",
-  "author": "Voxable LLC <howdy@voxable.io>",
+  "author": "Voxable, Inc. <howdy@voxable.io>",
   "bugs": "https://github.com/voxable/cli/issues",
   "dependencies": {
     "@oclif/command": "^1",
