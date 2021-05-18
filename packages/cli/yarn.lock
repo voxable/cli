@@ -294,10 +294,10 @@
   resolved "https://registry.yarnpkg.com/@voxable/client/-/client-0.1.0.tgz#993c40acc69091fdb06073063efe4eaf0a7f13e1"
   integrity sha512-dFL3XM8X2zwisKxBjOgSISv3InM78FGTySNMqNip+eIQCudQCy8nxojqzCeRGBb5nOKRIVU6q5LsEU7cs/uTAQ==
 
-"@voxable/command@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@voxable/command/-/command-0.1.0.tgz#50e1367e97e94ce913cdc21c7673954aa71599e6"
-  integrity sha512-FcLfier5s8pu35ypmga7rH7ioS+V4znFf/F3wk7FX8gPtLAV6gBBtvYgdBRC+QQORqW1D83uomLoxsvVxdREeg==
+"@voxable/command@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@voxable/command/-/command-0.1.1.tgz#1f477f5f3c6d1c29c13b7eac973096d88e70bd70"
+  integrity sha512-Nco+jha5rHo/hGOVEaQQO+Eg8TvWqNwsMgEQ0Gmh/qFH8pni52j1jvLqKKKLx1RbRAfLzuUMwJ6QIZSDESalmg==
 
 acorn-jsx@^5.3.1:
   version "5.3.1"
