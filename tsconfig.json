@@ -4,6 +4,8 @@
     "declaration": true,
     "importHelpers": true,
     "module": "commonjs",
+    "resolveJsonModule": true,
+    "composite": true,
     "paths": {
       "@voxable/*": ["*/src"]
     },
@@ -11,6 +13,9 @@
     "target": "es2017",
   },
   "include": [
-    "src/**/*"
+    "packages/**/*"
+  ],
+  "files": [
+    "package.json"
   ]
 }

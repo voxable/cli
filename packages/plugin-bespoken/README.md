@@ -16,37 +16,37 @@ Bespoken plugin for the Voxable CLI.
 <!-- usage -->
 ```sh-session
 $ npm install -g @voxable/plugin-bespoken
-$ oclif-example COMMAND
+$ voxable COMMAND
 running command...
-$ oclif-example (-v|--version|version)
-@voxable/plugin-bespoken/0.0.0 darwin-x64 node-v15.12.0
-$ oclif-example --help [COMMAND]
+$ voxable (-v|--version|version)
+@voxable/plugin-bespoken/0.1.0 darwin-x64 node-v15.12.0
+$ voxable --help [COMMAND]
 USAGE
-  $ oclif-example COMMAND
+  $ voxable COMMAND
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`oclif-example hello [FILE]`](#oclif-example-hello-file)
+* [`voxable bespoken:transform PROJECT_ID`](#voxable-bespokentransform-project_id)
 
-## `oclif-example hello [FILE]`
+## `voxable bespoken:transform PROJECT_ID`
 
-describe the command here
+transform a Voxable project into Bespoken tests
 
 ```
 USAGE
-  $ oclif-example hello [FILE]
+  $ voxable bespoken:transform PROJECT_ID
+
+ARGUMENTS
+  PROJECT_ID  project ID
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  -h, --help  show CLI help
 
 EXAMPLE
-  $ oclif-example hello
-  hello world from ./src/hello.ts!
+  $ voxable bespoken:transform PROJECT_ID
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/voxable/plugin-bespoken/blob/v0.0.0/src/commands/hello.ts)_
+_See code: [src/commands/bespoken/transform.ts](https://github.com/voxable/cli/blob/v0.1.0/src/commands/bespoken/transform.ts)_
 <!-- commandsstop -->

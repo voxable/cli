@@ -1,13 +1,12 @@
-import Base from '../../base'
+import Base from '@voxable/command'
 
 import cli from 'cli-ux'
-import {flags} from '@oclif/command'
 
 export default class ExportProject extends Base {
   static description = 'export a project'
 
   static examples = [
-    '$ voxable projects:export 3b2dcb09-e4d8-481a-8cc9-4fdc2bdb45f6',
+    '$ voxable projects:export PROJECT_ID',
   ]
 
   static args = [
@@ -17,10 +16,6 @@ export default class ExportProject extends Base {
       description: 'project ID',
     },
   ]
-
-  static flags = {
-    help: flags.help({char: 'h'}),
-  }
 
   async run() {
     const {args} = this.parse(ExportProject)

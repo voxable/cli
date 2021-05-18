@@ -19,7 +19,7 @@ $ npm install -g @voxable/cli
 $ voxable COMMAND
 running command...
 $ voxable (-v|--version|version)
-@voxable/cli/0.0.3 darwin-x64 node-v15.12.0
+@voxable/cli/0.1.0 darwin-x64 node-v15.12.0
 $ voxable --help [COMMAND]
 USAGE
   $ voxable COMMAND
@@ -28,33 +28,14 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`voxable help [COMMAND]`](#voxable-help-command)
 * [`voxable plugins`](#voxable-plugins)
 * [`voxable plugins:inspect PLUGIN...`](#voxable-pluginsinspect-plugin)
 * [`voxable plugins:install PLUGIN...`](#voxable-pluginsinstall-plugin)
 * [`voxable plugins:link PLUGIN`](#voxable-pluginslink-plugin)
 * [`voxable plugins:uninstall PLUGIN...`](#voxable-pluginsuninstall-plugin)
 * [`voxable plugins:update`](#voxable-pluginsupdate)
-* [`voxable projects`](#voxable-projects)
 * [`voxable projects:export PROJECT_ID`](#voxable-projectsexport-project_id)
 * [`voxable projects:list`](#voxable-projectslist)
-
-## `voxable help [COMMAND]`
-
-display help for voxable
-
-```
-USAGE
-  $ voxable help [COMMAND]
-
-ARGUMENTS
-  COMMAND  command to show help for
-
-OPTIONS
-  --all  see all commands in CLI
-```
-
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
 
 ## `voxable plugins`
 
@@ -194,15 +175,6 @@ OPTIONS
 
 _See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v1.10.0/src/commands/plugins/update.ts)_
 
-## `voxable projects`
-
-```
-USAGE
-  $ voxable projects
-```
-
-_See code: [src/commands/projects/index.ts](https://github.com/voxable/cli/blob/v0.0.3/src/commands/projects/index.ts)_
-
 ## `voxable projects:export PROJECT_ID`
 
 export a project
@@ -218,10 +190,10 @@ OPTIONS
   -h, --help  show CLI help
 
 EXAMPLE
-  $ voxable projects:export 3b2dcb09-e4d8-481a-8cc9-4fdc2bdb45f6
+  $ voxable projects:export PROJECT_ID
 ```
 
-_See code: [src/commands/projects/export.ts](https://github.com/voxable/cli/blob/v0.0.3/src/commands/projects/export.ts)_
+_See code: [src/commands/projects/export.ts](https://github.com/voxable/cli/blob/v0.1.0/src/commands/projects/export.ts)_
 
 ## `voxable projects:list`
 
@@ -231,9 +203,12 @@ list all projects
 USAGE
   $ voxable projects:list
 
+OPTIONS
+  -j, --json  Output results in JSON. When not specified, renders in human-readable format.
+
 EXAMPLE
   $ voxable projects:list
 ```
 
-_See code: [src/commands/projects/list.ts](https://github.com/voxable/cli/blob/v0.0.3/src/commands/projects/list.ts)_
+_See code: [src/commands/projects/list.ts](https://github.com/voxable/cli/blob/v0.1.0/src/commands/projects/list.ts)_
 <!-- commandsstop -->

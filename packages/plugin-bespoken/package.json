@@ -1,13 +1,15 @@
 {
   "name": "@voxable/plugin-bespoken",
   "description": "Bespoken plugin for the Voxable CLI.",
-  "version": "0.0.0",
-  "author": "Voxable LLC <howdy@voxable.io>",
+  "version": "0.1.0",
+  "author": "Voxable, Inc. <howdy@voxable.io>",
   "bugs": "https://github.com/voxable/cli/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
-    "@voxable/client": "file:../client/",
+    "@oclif/dev-cli": "1.26.0",
+    "@voxable/client": "^0.1.0",
+    "@voxable/command": "^0.1.0",
     "tslib": "^1"
   },
   "engines": {
@@ -25,10 +27,11 @@
   ],
   "license": "MIT",
   "oclif": {
+    "scope": "bespoken",
     "commands": "./lib/commands",
-    "bin": "oclif-example",
+    "bin": "voxable",
     "devPlugins": [
-      "@oclif/plugin-help"
+      "@oclif/plugin-plugins"
     ]
   },
   "repository": "voxable/cli",
@@ -38,5 +41,14 @@
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
     "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif-dev readme && git add README.md"
-  }
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "1.26.0",
+    "@oclif/plugin-plugins": "1.10.0",
+    "@typescript-eslint/eslint-plugin": "4.24.0",
+    "@typescript-eslint/parser": "4.24.0",
+    "eslint": "7.26.0",
+    "typescript": "4.2.4"
+  },
+  "gitHead": "de47b9104ac85cc16b82d206c20206a1d6a2bf80"
 }

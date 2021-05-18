@@ -9,6 +9,7 @@
     "@types/node": "^10",
     "@typescript-eslint/eslint-plugin": "4.23.0",
     "@typescript-eslint/parser": "4.23.0",
+    "axios": "0.21.1",
     "chai": "^4",
     "eslint": "^5.13",
     "eslint-config-oclif": "^3.1",
@@ -21,7 +22,7 @@
     "typescript": "^3.3"
   },
   "dependencies": {
-    "@voxable/cli": "file:packages/cli",
-    "@voxable/plugin-bespoken": "file:packages/plugin-bespoken"
+    "@oclif/command": "^1",
+    "@oclif/config": "^1"
   }
 }
