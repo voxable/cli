@@ -28,10 +28,9 @@ export default class Transform extends Base {
       const project = JSON.stringify(response.data)
 
       cli.action.stop()
-      cli.action.start('🏭 Generating Bespoken tests...')
 
       // Output tests.
-      generate(project)
+      this.log(generate(project))
     }, (error: string | Error) => {
       this.error(error)
     })
