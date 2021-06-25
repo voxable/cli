@@ -41,3 +41,9 @@ This project is using yarn v2. To upgrade to the latest version of the 2.x line:
 ```console
 yarn set version latest
 ```
+
+### Generating `CHANGELOG` entries
+                       
+```console
+export GITHUB_AUTH="..." && yarn run lerna-changelog
+```
