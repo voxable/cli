@@ -26,8 +26,5 @@
     "@oclif/command": "^1",
     "@oclif/config": "^1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/voxable/cli.git"
-  }
+  "repository": "voxable/cli"
 }
