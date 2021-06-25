@@ -12,3 +12,12 @@ node_modules
 
 # TypeScript build info
 *.tsbuildinfo
+
+# yarn
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
