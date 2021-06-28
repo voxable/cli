@@ -25,6 +25,8 @@ lerna bootstrap --scope @voxable/plugin-bespoken
 lerna bootstrap
 ```
 
+At this point, you can run the CLI from the root directory of the project with: `yarn run cli`
+
 [In order to simplify local development](https://github.com/microsoft/TypeScript/issues/21423#issuecomment-706719739), project files are compiled into JavaScript in `lib` alongside their TypeScript sources.
 
 ### Creating a new plugin
