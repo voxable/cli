@@ -24,5 +24,13 @@
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1"
-  }
+  },
+  "scripts": {
+    "cli": "yarn workspace cli",
+    "bespoken": "yarn workspace bespoken",
+    "colang": "yarn workspace colang"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }

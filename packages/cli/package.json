@@ -59,7 +59,7 @@
     "@typescript-eslint/eslint-plugin": "4.23.0",
     "@typescript-eslint/parser": "4.23.0",
     "eslint": "7.26.0",
-    "typescript": "4.2.4"
+    "typescript": "^4.3.4"
   },
   "gitHead": "de47b9104ac85cc16b82d206c20206a1d6a2bf80"
 }
