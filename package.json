@@ -26,7 +26,8 @@
     "@oclif/config": "^1"
   },
   "scripts": {
-    "cli": "yarn workspace cli",
+    "prepare": "node scripts/configure-references.js",
+    "cli": "yarn workspace @voxable/cli local",
     "bespoken": "yarn workspace bespoken",
     "colang": "yarn workspace colang"
   },

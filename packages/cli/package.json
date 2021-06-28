@@ -36,7 +36,7 @@
     "voice"
   ],
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "lib/",
   "oclif": {
     "commands": "./lib/commands",
     "bin": "voxable",
@@ -47,13 +47,13 @@
   },
   "repository": "voxable/cli",
   "scripts": {
+    "local": "bin/run",
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "eslint . --ext .ts --config .eslintrc",
     "prepack": "rm -f tsconfig.tsbuildinfo && rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
     "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif-dev readme && git add README.md"
   },
-  "types": "lib/index.d.ts",
   "devDependencies": {
     "@oclif/dev-cli": "1.26.0",
     "@typescript-eslint/eslint-plugin": "4.23.0",
@@ -61,5 +61,13 @@
     "eslint": "7.26.0",
     "typescript": "^4.3.4"
   },
-  "gitHead": "de47b9104ac85cc16b82d206c20206a1d6a2bf80"
+  "gitHead": "de47b9104ac85cc16b82d206c20206a1d6a2bf80",
+  "references": [
+    {
+      "path": "../client"
+    },
+    {
+      "path": "../command"
+    }
+  ]
 }

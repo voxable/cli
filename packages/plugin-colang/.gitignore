@@ -4,5 +4,3 @@ test/*/**/*.d.ts
 test/*/**/*.js
 lib/index.d.ts
 lib/index.js
-lib/*.d.ts
-lib/*.js
