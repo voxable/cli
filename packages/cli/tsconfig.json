@@ -1,25 +1,27 @@
 {
-  "extends": "../../tsconfig.json",
-
-  "compilerOptions": {
-    "declaration": true,
-    "importHelpers": true,
-    "module": "commonjs",
-    "outDir": "lib",
-    "rootDir": "src",
-    "strict": true,
-    "target": "es2017",
-    "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true
-  },
-
-  "include": [
-    "src/**/*"
-  ],
-
-  "references": [
-    {
-      "path": "../../"
-    }
-  ]
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "declarationMap": true,
+        "sourceMap": true,
+        "composite": true,
+        "importHelpers": true,
+        "module": "commonjs",
+        "outDir": "lib",
+        "rootDir": "lib",
+        "strict": true,
+        "target": "es2017",
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "references": [
+        {
+            "path": "../client"
+        },
+        {
+            "path": "../command"
+        }
+    ]
 }

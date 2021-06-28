@@ -3,6 +3,9 @@
   "description": "Bespoken plugin for the Voxable CLI.",
   "version": "0.1.5",
   "author": "Voxable, Inc. <howdy@voxable.io>",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "source": "src/index.ts",
   "bugs": "https://github.com/voxable/cli/issues",
   "dependencies": {
     "@oclif/command": "^1",
@@ -49,7 +52,7 @@
     "@typescript-eslint/eslint-plugin": "4.24.0",
     "@typescript-eslint/parser": "4.24.0",
     "eslint": "7.26.0",
-    "typescript": "4.2.4"
+    "typescript": "^4.3.4"
   },
   "gitHead": "de47b9104ac85cc16b82d206c20206a1d6a2bf80"
 }

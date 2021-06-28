@@ -24,5 +24,14 @@
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1"
-  }
+  },
+  "scripts": {
+    "prepare": "node scripts/configure-references.js",
+    "cli": "yarn workspace @voxable/cli local",
+    "bespoken": "yarn workspace bespoken",
+    "colang": "yarn workspace colang"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }

@@ -1,21 +1,51 @@
 {
-  "compilerOptions": {
-    "baseUrl": "./packages",
-    "declaration": true,
-    "importHelpers": true,
-    "module": "commonjs",
-    "resolveJsonModule": true,
-    "composite": true,
-    "paths": {
-      "@voxable/*": ["*/src"]
+    "compilerOptions": {
+        "declaration": true,
+        "importHelpers": true,
+        "lib": [
+            "ESNext"
+        ],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+        "composite": true,
+        "baseUrl": "./packages",
+        "paths": {
+            "@voxable/cli": [
+                "cli/src/*"
+            ],
+            "@voxable/client": [
+                "client/src/*"
+            ],
+            "@voxable/command": [
+                "command/src/*"
+            ]
+        },
+        "strict": true,
+        "target": "es2017"
     },
-    "strict": true,
-    "target": "es2017",
-  },
-  "include": [
-    "packages/**/*"
-  ],
-  "files": [
-    "package.json"
-  ]
+    "include": [
+        "packages/**/*"
+    ],
+    "files": [],
+    "references": [
+        {
+            "path": "packages/cli"
+        },
+        {
+            "path": "packages/client"
+        },
+        {
+            "path": "packages/command"
+        },
+        {
+            "path": "packages/plugin-bespoken"
+        },
+        {
+            "path": "packages/plugin-colang"
+        }
+    ]
 }
