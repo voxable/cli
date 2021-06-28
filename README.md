@@ -13,17 +13,7 @@ See [our API documentation](http://help.voxable.io/en/articles/5231902-using-the
 
 ## Contributing
 
-This CLI is a monorepo managed with [Lerna](https://lerna.js.org/). Check out the main repo and bootstrap it to get started with local development:
-
-```console
-cd voxable-cli
-yarn
-lerna bootstrap --scope @voxable/cli
-lerna bootstrap --scope @voxable/client
-lerna bootstrap --scope @voxable/command
-lerna bootstrap --scope @voxable/plugin-bespoken
-lerna bootstrap
-```
+This CLI is a monorepo managed with [Lerna](https://lerna.js.org/). Since [yarn 2 zero-installs](https://yarnpkg.com/features/zero-installs) are in effect, no `yarn install` is necessary.
 
 ### Creating a new plugin
 

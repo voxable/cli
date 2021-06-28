@@ -20,6 +20,12 @@
   "references": [
     {
       "path": "../../"
+    },
+    {
+      "path": "../client/"
+    },
+    {
+      "path": "../command/"
     }
   ]
 }

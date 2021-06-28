@@ -6,7 +6,6 @@
   "repository": "https://github.com/voxable/cli",
   "author": "Voxable, Inc. <howdy@voxable.io>",
   "license": "MIT",
-  "private": false,
   "files": [
     "/lib",
     "npm-shrinkwrap.json"
