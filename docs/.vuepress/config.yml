@@ -1,0 +1,7 @@
+title: Voxable Developer Docs
+description: Developer documentation for the Voxable API & CLI.
+themeConfig:
+  sidebar:
+    - title: Getting Started
+      path: /getting-started/
+
