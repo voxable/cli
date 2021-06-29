@@ -1,6 +1,10 @@
 {
   "name": "root",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/voxable/cli.git"
+  },
   "devDependencies": {
     "@oclif/plugin-help": "^3",
     "@oclif/test": "^1",
@@ -16,6 +20,7 @@
     "eslint-config-oclif-typescript": "^0.1",
     "globby": "^10",
     "lerna": "^4.0.0",
+    "lerna-changelog": "^1.0.1",
     "mocha": "^5",
     "nyc": "^14",
     "ts-node": "^8",
