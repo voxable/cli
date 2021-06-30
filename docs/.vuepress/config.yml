@@ -1,7 +1,27 @@
-title: Voxable Developer Docs
-description: Developer documentation for the Voxable API & CLI.
+title: Technical Docs
+description: Technical documentation for the Voxable API & CLI.
 themeConfig:
+  logo: '/logo.png'
   sidebar:
-    - title: Getting Started
-      path: /getting-started/
-
+    - title: '🗺️ Introduction'
+      path: /
+    - title: '🖥️ The Voxable CLI'
+      path: /cli/
+    - title: '🏗️ The Voxable API'
+      path: /api/
+    - title: '⚙️ CLI Plugins'
+      path: /plugins/
+      collapsable: false
+      children:
+        - title: Available Plugins
+          path: /plugins/
+        - title: Bespoken Plugin
+          path: /plugins/bespoken
+        - title: Colang Plugin
+          path: /plugins/colang
+    - title: '💻 Contributing'
+      collapsable: false
+      path: /contributing/
+      children:
+        - title: Community
+          path: /contributing/community
