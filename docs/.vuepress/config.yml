@@ -7,6 +7,11 @@ themeConfig:
       link: 'https://voxable.io'
     - text: 'Voxable App'
       link: 'https://voxable.design'
+    - text: 'Support'
+      link: 'http://help.voxable.io'
+  repo: 'voxable/cli'
+  docsDir: docs
+  editLinks: true
   sidebar:
     - title: '🗺️ Introduction'
       path: /
@@ -28,5 +33,7 @@ themeConfig:
       collapsable: false
       path: /contributing/
       children:
+        - title: Introduction
+          path: /contributing/
         - title: Community
           path: /contributing/community
