@@ -1,8 +1,6 @@
 title: Technical Docs
 description: Technical documentation for the Voxable API & CLI.
-patterns:
-  -
-    - '!**/node_modules'
+patterns: '!**/node_modules'
 themeConfig:
   logo: '/logo.png'
   nav:
