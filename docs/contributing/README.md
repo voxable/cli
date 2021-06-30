@@ -10,7 +10,6 @@ yarn
 lerna bootstrap --scope @voxable/cli
 lerna bootstrap --scope @voxable/client
 lerna bootstrap --scope @voxable/command
-lerna bootstrap --scope @voxable/plugin-bespoken
 lerna bootstrap
 ```
 

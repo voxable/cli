@@ -11,7 +11,7 @@ To install the Bespoken plugin, run the following command:
 $ voxable plugins:install bespoken
 ```
 
-This will allow you to export a Voxable project's data and transform it into [Bespoken tests](https://read.bespoken.io/). Here, we see a transformation of a simple Voxable project:
+This will allow you to export a Voxable project's data and transform it into [Bespoken tests](https://read.bespoken.io/end-to-end/getting-started/). Here, we see a transformation of a simple Voxable project:
 
 ```sh-session
 $ voxable bespoken:transform [PROJECT_ID]

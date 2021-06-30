@@ -1,6 +1,8 @@
 # Voxable CLI Plugin: Bespoken
 
-[Bespoken](https://bespoken.io/) provides automated testing and monitoring tools for voice & IVR experiences. With the Voxable CLI Bespoken plugin, you can transform your Voxable designs directly into [Bespoken automated tests](https://read.bespoken.io/).
+[Bespoken](https://bespoken.io/) provides automated testing and monitoring tools for voice & IVR experiences. With the Voxable CLI Bespoken plugin, you can transform your Voxable designs directly into [Bespoken automated end-to-end tests](https://read.bespoken.io/end-to-end/getting-started/):
+
+![An example of passing Bespoken tests.](/images/bespoken/bespoken-example.png)
 
 ::: warning
 **This plugin is still under active development.** Currently, it only supports simple use cases. If you encounter any problems, please [get in touch!](../contributing/community.md)
