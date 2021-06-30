@@ -1,0 +1,39 @@
+title: Technical Docs
+description: Technical documentation for the Voxable API & CLI.
+themeConfig:
+  logo: '/logo.png'
+  nav:
+    - text: 'Voxable Homepage'
+      link: 'https://voxable.io'
+    - text: 'Voxable App'
+      link: 'https://voxable.design'
+    - text: 'Support'
+      link: 'http://help.voxable.io'
+  repo: 'voxable/cli'
+  docsDir: docs
+  editLinks: true
+  sidebar:
+    - title: '🗺️ Introduction'
+      path: /
+    - title: '🖥️ The Voxable CLI'
+      path: /cli/
+    - title: '🏗️ The Voxable API'
+      path: /api/
+    - title: '⚙️ CLI Plugins'
+      path: /plugins/
+      collapsable: false
+      children:
+        - title: Available Plugins
+          path: /plugins/
+        - title: Bespoken Plugin
+          path: /plugins/bespoken
+        - title: Colang Plugin
+          path: /plugins/colang
+    - title: '💻 Contributing'
+      collapsable: false
+      path: /contributing/
+      children:
+        - title: Introduction
+          path: /contributing/
+        - title: Community
+          path: /contributing/community
