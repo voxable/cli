@@ -25,11 +25,11 @@ USAGE
 ...
 ```
 <!-- usagestop -->
-# Commands
+## Commands
 <!-- commands -->
 * [`voxable colang:transform PROJECT_ID`](#voxable-colangtransform-project_id)
 
-## `voxable colang:transform PROJECT_ID`
+### `voxable colang:transform PROJECT_ID`
 
 export and transform a Voxable project into Colang
 
