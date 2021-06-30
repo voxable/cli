@@ -2,6 +2,11 @@ title: Technical Docs
 description: Technical documentation for the Voxable API & CLI.
 themeConfig:
   logo: '/logo.png'
+  nav:
+    - text: 'Voxable Homepage'
+      link: 'https://voxable.io'
+    - text: 'Voxable App'
+      link: 'https://voxable.design'
   sidebar:
     - title: '🗺️ Introduction'
       path: /
