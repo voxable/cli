@@ -34,8 +34,6 @@
   "scripts": {
     "prepare": "node scripts/configure-references.js",
     "cli": "yarn workspace @voxable/cli local",
-    "bespoken": "yarn workspace bespoken",
-    "colang": "yarn workspace colang",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },

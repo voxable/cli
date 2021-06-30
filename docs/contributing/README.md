@@ -28,12 +28,59 @@ To run the docs locally, run the following from the root directory of that proje
 yarn run docs:dev
 ```
 
-## Creating a new plugin
+## Developing plugins
 
-1. `npx oclif plugin mynewplugin`
+To use a plugin with your local checkout of the CLI, link the plugin to your project, then install it:
+
+```sh-session
+$ yarn run cli plugins:link packages/plugin-bespoken
+```
+
+This will create a file `~/.local/share/@voxable/cli/package.json` with the following content:
+
+```json
+{
+  "private": true,
+  "oclif": {
+    "schema": 1,
+    "plugins": [
+      {
+        "type": "link",
+        "name": "@voxable/cli",
+        "root": "/Users/someuser/git/voxable-cli/packages/cli"
+      }
+    ]
+  },
+  "dependencies": {}
+}
+```
+
+Edit the `name` and `root` of the member of the `plugins` array with a name of `@voxable/cli` to instead point at your plugin:
+
+```json
+{
+  "private": true,
+  "oclif": {
+    "schema": 1,
+    "plugins": [
+      {
+        "type": "link",
+        "name": "@voxable/plugin-bespoken",
+        "root": "/Users/someuser/git/voxable-cli/packages/plugin-bespoken"
+      }
+    ]
+  },
+  "dependencies": {}
+}
+```
+
+### Creating a new plugin
+
+1. `npx oclif plugin newplugin`
 2. `cd mynewplugin`
 3. `yarn add @oclif/plugin-plugins @oclif/plugin-help`
-4. Copy `oclif.scope` and `oclif.dependencies` from an existing plugin's `package.json`.
-5. From your local checkout of this repo, run `./bin/run plugins:link ../mynewplugin`
-6. Run `./bin/run plugins` to ensure you see your new plugin listed.
+4. Copy an existing plugin's `package.json` and edit appropriately.
+5. From the root directory, run `lerna bootstrap --scope @voxable/plugin-newplugin`
+5. Follow the `plugin:link` steps in the section above for your new plugin.
+6. Run `yarn run cli plugins` to ensure you see your new plugin listed.
 

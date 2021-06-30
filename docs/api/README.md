@@ -1,6 +1,6 @@
 # The Voxable API
 
-The Voxable API enables access to all of the conversational design data your team has created in Voxable.
+The Voxable API enables access to all of the conversation design data your team has created in Voxable.
 
 ## Documentation
 
