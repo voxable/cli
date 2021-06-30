@@ -28,3 +28,12 @@ To run the docs locally, run the following from the root directory of that proje
 yarn run docs:dev
 ```
 
+## Creating a new plugin
+
+1. `npx oclif plugin mynewplugin`
+2. `cd mynewplugin`
+3. `yarn add @oclif/plugin-plugins @oclif/plugin-help`
+4. Copy `oclif.scope` and `oclif.dependencies` from an existing plugin's `package.json`.
+5. From your local checkout of this repo, run `./bin/run plugins:link ../mynewplugin`
+6. Run `./bin/run plugins` to ensure you see your new plugin listed.
+

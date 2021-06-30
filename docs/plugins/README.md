@@ -33,3 +33,7 @@ locales: en-US
 - test: Launch request only
 - "Alexa, open Simple Project.":"Hello! I am Simple Project. You can say, \"Add a task,\" or \"cancel\" to quit. How can I help you today?"
 ```
+
+## Creating plugins
+
+You can [read about adding new Voxable CLI plugins](../contributing/README.md#creating-a-new-plugin)
