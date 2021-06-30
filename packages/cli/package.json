@@ -8,6 +8,7 @@
   },
   "bugs": "https://github.com/voxable/cli/issues",
   "dependencies": {
+    "@oclif/plugin-help": "^3.2.2",
     "@oclif/plugin-plugins": "1.10.0",
     "@types/cli-table": "0.3.0",
     "@voxable/client": "^0.1.4",
@@ -42,6 +43,7 @@
     "bin": "voxable",
     "scope": "voxable",
     "plugins": [
+      "@oclif/plugin-help",
       "@oclif/plugin-plugins"
     ]
   },
