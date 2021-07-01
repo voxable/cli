@@ -46,15 +46,16 @@ export default function generate(projectExport: string): string {
   const project = JSON.parse(projectExport)
 
   // Add test configuration.
-  let tests = '---\nconfiguration:\n  locales: en-US\n  voiceId:Joey\n\n---'
+  let tests = '---\nconfiguration:\n  locales: en-US\n  voiceId: Joey'
 
   // For each script in the project...
   for (const script of project.scripts) {
+
     // Generate each linear path.
     const paths = renderTests(script.blocks)
 
     for (const path of paths) {
-      tests += '\n\n- test: ' + script.title
+      tests += '\n\n---\n- test: ' + script.title
 
       for (const message of path) {
         if (message.type === 'UserMessage') {
