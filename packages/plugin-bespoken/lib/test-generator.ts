@@ -34,6 +34,17 @@ function transformMessage(message: Record<string, any>): Record<string, any> {
   }
 }
 
+/**
+ * Simplify a message to replicate TTS -> STT transformation
+ * from Bespoken virtual device (remove most punctuation,
+ * make lower-case).
+ *
+ * @param text -
+ *   The text to simplify.
+ *
+ * @return
+ *   The simplified text.
+ */
 function simplify(text: string): string {
   // TODO: These replacements are language-specific. ~i18n
   return text.replace(/[^\w\s]/gi, '')
