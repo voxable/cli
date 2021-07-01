@@ -11,28 +11,7 @@ To install the Bespoken plugin, run the following command:
 $ voxable plugins:install bespoken
 ```
 
-This will allow you to export a Voxable project's data and transform it into [Bespoken tests](https://read.bespoken.io/end-to-end/getting-started/). Here, we see a transformation of a simple Voxable project:
-
-```sh-session
-$ voxable bespoken:transform [PROJECT_ID]
-📦 Exporting project...... done
----
-configuration:
-locales: en-US
-
----
-
-- test: Launch request, add task
-- "Alexa, open Simple Project.":"Hello! I am Simple Project. You can say, \"Add a task,\" or \"cancel\" to quit. How can I help you today?"
-- "Add a task.":"Sorry, I'm not going to do that, actually. Goodbye!"
-
-- test: Launch request, add task
-- "Alexa, open Simple Project.":"Hello! I am Simple Project. You can say, \"Add a task,\" or \"cancel\" to quit. How can I help you today?"
-- "Cancel.":"Goodbye!"
-
-- test: Launch request only
-- "Alexa, open Simple Project.":"Hello! I am Simple Project. You can say, \"Add a task,\" or \"cancel\" to quit. How can I help you today?"
-```
+This will allow you to export a Voxable project's data and transform it into [Bespoken tests](https://read.bespoken.io/end-to-end/getting-started/). 
 
 ## Creating plugins
 
