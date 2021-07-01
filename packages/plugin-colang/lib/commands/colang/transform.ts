@@ -12,7 +12,7 @@ type Script = {
   id: string,
   title: string,
   type: string,
-  blocks: Array<Block>
+  blocks: Block
 }
 
 type Project = {
@@ -116,7 +116,7 @@ export default class Transform extends Base {
      // Use the script name as the name of the flow
      lines.push(`# ${script.title}`)
      lines.push(`${script.title.toLowerCase().replace(' ', '_')}:`)
-     lines = lines.concat(this.convertBlock(script.blocks[0], '  '))
+     lines = lines.concat(this.convertBlock(script.blocks, '  '))
      lines.push('')
    }
 
