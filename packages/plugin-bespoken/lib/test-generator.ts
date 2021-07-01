@@ -34,6 +34,15 @@ function transformMessage(message: Record<string, any>): Record<string, any> {
   }
 }
 
+function simplify(text: string): string {
+  // TODO: These replacements are language-specific. ~i18n
+  return text.replace(/[^\w\s]/gi, '')
+    .toLowerCase()
+    // Replace lower-case "I"
+    .replace(/\si\s/g, ' I ')
+    .replace(/\sim\s/g, " I'm ")
+}
+
 /**
  * Output Bespoken tests for this Voxable project.
  *
@@ -59,9 +68,9 @@ export default function generate(projectExport: string): string {
 
       for (const message of path) {
         if (message.type === 'UserMessage') {
-          tests += '\n- "' + message.text + '":'
+          tests += '\n- "' + message.text + '": '
         } else {
-          tests += '"' + message.text + '"'
+          tests += simplify(message.text)
         }
       }
     }
