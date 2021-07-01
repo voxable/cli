@@ -19,7 +19,7 @@ $ npm install -g @voxable/cli
 $ voxable COMMAND
 running command...
 $ voxable (-v|--version|version)
-@voxable/cli/0.1.6 darwin-x64 node-v15.12.0
+@voxable/cli/0.1.7 darwin-x64 node-v15.12.0
 $ voxable --help [COMMAND]
 USAGE
   $ voxable COMMAND
@@ -28,6 +28,7 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`voxable help [COMMAND]`](#voxable-help-command)
 * [`voxable plugins`](#voxable-plugins)
 * [`voxable plugins:inspect PLUGIN...`](#voxable-pluginsinspect-plugin)
 * [`voxable plugins:install PLUGIN...`](#voxable-pluginsinstall-plugin)
@@ -36,6 +37,23 @@ USAGE
 * [`voxable plugins:update`](#voxable-pluginsupdate)
 * [`voxable projects:export PROJECT_ID`](#voxable-projectsexport-project_id)
 * [`voxable projects:list`](#voxable-projectslist)
+
+## `voxable help [COMMAND]`
+
+display help for voxable
+
+```
+USAGE
+  $ voxable help [COMMAND]
+
+ARGUMENTS
+  COMMAND  command to show help for
+
+OPTIONS
+  --all  see all commands in CLI
+```
+
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
 
 ## `voxable plugins`
 
@@ -193,8 +211,6 @@ EXAMPLE
   $ voxable projects:export PROJECT_ID
 ```
 
-_See code: [src/commands/projects/export.ts](https://github.com/voxable/cli/blob/v0.1.6/src/commands/projects/export.ts)_
-
 ## `voxable projects:list`
 
 list all projects
@@ -209,6 +225,4 @@ OPTIONS
 EXAMPLE
   $ voxable projects:list
 ```
-
-_See code: [src/commands/projects/list.ts](https://github.com/voxable/cli/blob/v0.1.6/src/commands/projects/list.ts)_
 <!-- commandsstop -->

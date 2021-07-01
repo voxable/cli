@@ -22,7 +22,7 @@ $ npm install -g @voxable/plugin-colang
 $ voxable COMMAND
 running command...
 $ voxable (-v|--version|version)
-@voxable/plugin-colang/0.1.0 darwin-x64 node-v15.12.0
+@voxable/plugin-colang/0.1.1 darwin-x64 node-v15.12.0
 $ voxable --help [COMMAND]
 USAGE
   $ voxable COMMAND

@@ -1,7 +1,7 @@
 {
   "name": "@voxable/cli",
   "description": "A client for the Voxable conversation design platform's API.",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "author": "Voxable, Inc. <howdy@voxable.io>",
   "bin": {
     "voxable": "./bin/run"
@@ -11,8 +11,8 @@
     "@oclif/plugin-help": "^3.2.2",
     "@oclif/plugin-plugins": "1.10.0",
     "@types/cli-table": "0.3.0",
-    "@voxable/client": "^0.1.4",
-    "@voxable/command": "^0.1.3",
+    "@voxable/client": "^0.1.5",
+    "@voxable/command": "^0.1.4",
     "chalk": "4.1.1",
     "cli-table": "0.3.6",
     "cli-ux": "5.5.1",
