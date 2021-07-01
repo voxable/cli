@@ -36,7 +36,7 @@
     "vui",
     "voice"
   ],
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "main": "lib/",
   "oclif": {
     "commands": "./lib/commands",
@@ -50,9 +50,10 @@
   "repository": "voxable/cli",
   "scripts": {
     "local": "bin/run",
-    "postpack": "rm -f oclif.manifest.json",
+    "postpack": "rm -f oclif.manifest.json && clean",
     "posttest": "eslint . --ext .ts --config .eslintrc",
-    "prepack": "rm -f tsconfig.tsbuildinfo && rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "clean": "rimraf \"lib/**/*(.js|.d.ts)\"",
+    "prepack": "rm -f tsconfig.tsbuildinfo && yarn run clean && tsc -b && oclif-dev manifest && oclif-dev readme",
     "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif-dev readme && git add README.md"
   },
@@ -61,6 +62,7 @@
     "@typescript-eslint/eslint-plugin": "4.23.0",
     "@typescript-eslint/parser": "4.23.0",
     "eslint": "7.26.0",
+    "rimraf": "^3.0.2",
     "typescript": "^4.3.4"
   },
   "gitHead": "de47b9104ac85cc16b82d206c20206a1d6a2bf80",
