@@ -33,9 +33,8 @@
   },
   "scripts": {
     "prepare": "node scripts/configure-references.js",
+    "check-env": "node -e 'console.log(process.env)' | grep npm",
     "cli": "yarn workspace @voxable/cli local",
-    "bespoken": "yarn workspace bespoken",
-    "colang": "yarn workspace colang",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },

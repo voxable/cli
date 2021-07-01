@@ -22,7 +22,7 @@ $ npm install -g @voxable/plugin-colang
 $ voxable COMMAND
 running command...
 $ voxable (-v|--version|version)
-@voxable/plugin-colang/0.1.5 darwin-x64 node-v15.12.0
+@voxable/plugin-colang/0.1.0 darwin-x64 node-v15.12.0
 $ voxable --help [COMMAND]
 USAGE
   $ voxable COMMAND
@@ -31,15 +31,15 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`voxable colang:export PROJECT_ID`](#voxable-bespokentransform-project_id)
+* [`voxable colang:transform PROJECT_ID`](#voxable-colangtransform-project_id)
 
-## `voxable colang:export PROJECT_ID`
+## `voxable colang:transform PROJECT_ID`
 
-export a Voxable project into Colang
+export a Voxable project and transform it into Colang
 
 ```
 USAGE
-  $ voxable colang:export PROJECT_ID
+  $ voxable colang:transform PROJECT_ID
 
 ARGUMENTS
   PROJECT_ID  project ID
@@ -48,7 +48,6 @@ OPTIONS
   -h, --help  show CLI help
 
 EXAMPLE
-  $ voxable colang:export PROJECT_ID
+  $ voxable colang:transform PROJECT_ID
 ```
-
 <!-- commandsstop -->

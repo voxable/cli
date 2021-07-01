@@ -4,7 +4,7 @@ import generate from '../../test-generator'
 import cli from 'cli-ux'
 
 export default class Transform extends Base {
-  static description = 'transform a Voxable project into Bespoken tests'
+  static description = 'export a Voxable project and transform it into Bespoken tests'
 
   static examples = [
     '$ voxable bespoken:transform PROJECT_ID',

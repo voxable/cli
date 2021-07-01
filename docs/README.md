@@ -2,7 +2,7 @@
 
 **Access your team’s source of conversational AI truth with the Voxable API & CLI.**
 
-Using the [Voxable](https://voxable.io) API & CLI is the easiest way to automate exportation of your team‘s conversational design data. You can export your existing projects and transform them for importation into a [growing list of conversational AI tools](/plugins).
+Using the [Voxable](https://voxable.io) API & CLI is the easiest way to automate exportation of your team‘s conversation design data. You can export your existing projects and transform them for importation into a [growing list of conversational AI tools](/plugins).
 
 ![An animation showing a user exporting a Voxable project’s data with the CLI.](/images/cli/cli-animation.gif)
 
