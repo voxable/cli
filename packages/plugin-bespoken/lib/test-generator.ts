@@ -46,7 +46,7 @@ export default function generate(projectExport: string): string {
   const project = JSON.parse(projectExport)
 
   // Add test configuration.
-  let tests = '---\nconfiguration:\nlocales: en-US\n\n---'
+  let tests = '---\nconfiguration:\n  locales: en-US\n  voiceId:Joey\n\n---'
 
   // For each script in the project...
   for (const script of project.scripts) {
