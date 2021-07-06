@@ -1,4 +1,12 @@
-## Unreleased (2021-06-28)
+## 2021-06-28
+
+| Package | version |
+| ------- | ------- |
+| @voxable/cli | [0.1.7](https://github.com/voxable/cli/releases/tag/%40voxable%2Fcli%400.1.7) |
+| @voxable/client | [0.1.5](https://github.com/voxable/cli/releases/tag/%40voxable%2Fclient%400.1.5) |
+| @voxable/command | [0.1.4](https://github.com/voxable/cli/releases/tag/%40voxable%2Fcommand%400.1.4) |
+| @voxable/plugin-bespoken | [0.2.0](https://github.com/voxable/cli/releases/tag/%40voxable%2Fplugin-bespoken%400.2.0) |
+| @voxable/plugin-colang | [0.1.1](https://github.com/voxable/cli/releases/tag/%40voxable%2Fplugin-colang%400.1.1) |
 
 #### :boom: Breaking Change
 * `cli`, `client`, `command`, `plugin-bespoken`, `plugin-colang`
