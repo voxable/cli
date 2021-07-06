@@ -38,7 +38,7 @@
   },
   "repository": "voxable/cli",
   "scripts": {
-    "postpack": "rm -f oclif.manifest.json && clean",
+    "postpack": "rm -f oclif.manifest.json && yarn run clean",
     "posttest": "eslint . --ext .ts --config .eslintrc",
     "clean": "rimraf \"lib/**/*(.js|.d.ts)\"",
     "prepack": "rm -f tsconfig.tsbuildinfo && yarn run clean && tsc -b && oclif-dev manifest && oclif-dev readme",
