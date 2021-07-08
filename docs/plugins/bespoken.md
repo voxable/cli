@@ -1,5 +1,7 @@
 # Voxable CLI Plugin: Bespoken
 
+![The Bespoken llama logo.](/images/bespoken/bespoken-logo.png)
+
 [Bespoken](https://bespoken.io/) provides automated testing and monitoring tools for voice & IVR experiences. With the Voxable CLI Bespoken plugin, you can transform your Voxable designs directly into [Bespoken automated end-to-end tests](https://read.bespoken.io/end-to-end/getting-started/):
 
 Here, we see a transformation of a simple Voxable project:
