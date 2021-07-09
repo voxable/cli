@@ -4,7 +4,7 @@ The Voxable API enables access to all of the conversation design data your team 
 
 ## Documentation
 
-Check out [the Voxable API documentation](https://voxable.io/api) for example code and a list of all available API calls.
+Check out [the Voxable API documentation](https://api.voxable.io/) for example code and a list of all available API calls.
 
 ## Authentication
 
