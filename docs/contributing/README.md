@@ -19,7 +19,7 @@ At this point, you can run the CLI from the root directory of the project with: 
 
 ## Documentation
 
-This documentation site is built with [Vuepress](https://vuepress.org). It is housed within the `docs` directory of [the open source Voxable CLI](https://github.com/voxable).
+This documentation site is built with [Vuepress](https://vuepress.vuejs.org). It is housed within the `docs` directory of [the open source Voxable CLI](https://github.com/voxable).
 
 To run the docs locally, run the following from the root directory of that project:
 
